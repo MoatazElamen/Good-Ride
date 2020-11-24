@@ -68,6 +68,8 @@ button{
     border-color:#292F33;
     padding:10px;
     outline:none;
+    font-family: 'Oswald', sans-serif;
+    color:black;
 }
 .brand{
     display:flex;

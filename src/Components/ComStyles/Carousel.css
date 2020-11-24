@@ -13,6 +13,9 @@
 }
 .carousel-img{
     position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 .carousel-img img{
     width:700px;
@@ -90,28 +93,64 @@
 .carousel-number{
     font-size:60pt;
     bottom:20px;
-    width:25%;
-
+    width:250px;
+    display:flex;
+    justify-content: flex-end;
 }
 .carousel-footer{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    width:150%;
+    width:185%;
+    left:-42%;
+ 
     position: absolute;
     bottom:50px;
 }
 .carousel-social{
     width:250px;
+
+    display:flex;
 }
 .carousel-social div{
+    margin-right:10px;
     display:flex;
     justify-content: center;
     align-items: center;
+    flex-direction:row;
     width:30px;
     height:30px;
     border-radius:50%;
     border:0.5px solid;
     text-align: center;
     padding-right:2px;
+    transition:all ease-in 0.5s
+}
+.carousel-social div:hover{
+    background-color:#EEFF00;
+    border-width:0px;
+    cursor:pointer
+}
+.carousel-sell{
+    text-align: center;
+    font-size:8pt;
+    font-family:Oswald ,sans-serif;
+}
+.carousel-buynow{
+    position: absolute;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family:Oswald ,sans-serif;
+    background-color:#292F33;
+    color:#FFFFFF;
+    border:5px solid #EAFF00;
+    border-radius:50%;
+    height:60px;
+    width:60px;
+    cursor: pointer;
+    transition:all ease-in 0.5s;
+}
+.carousel-buynow:hover{
+    border-color:#AFFF00
 }

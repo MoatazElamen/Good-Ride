@@ -2,7 +2,7 @@ import React ,{useState,useEffect}from 'react'
 import "./ComStyles/Carousel.css"
 const Img = (props)=>{
     return(
-        <a href="/"><img  src={props.car} id={props.index} alt=""/></a>
+        <a href="/"><img  src={props.car} id={props.index} alt="img"/></a>
     )
 }
 
@@ -24,12 +24,13 @@ const Text = (props)=>{
 
     </div>
 </div>
+
     )
 
 }
 export default function CustomCarousel(props) {
     const [imgsarr,setImgsarr] = useState([])
-    const [textsarr, setTextsarr] = useState([])
+
     const [licenses,setLicenses] = useState([])
     const [titles,setTitles] = useState([])
     const [properties,setProperties] = useState([])
@@ -41,7 +42,8 @@ export default function CustomCarousel(props) {
         setDiscreptions(props.discreptions)
         setLicenses(props.licenses)
         setTitles(props.titles)
-    },[])
+        console.log("hello")
+    },[props.cars,props.discreptions,props.properties,props.licenses,props.titles])
     const Handleindexinc = ()=>{
         console.log(index)
         if(index<imgsarr.length-1){
@@ -62,6 +64,7 @@ export default function CustomCarousel(props) {
         <div className="custom-carousel">
             <div className="carousel-img">
             <Img car={imgsarr[index]} />
+            <div className="carousel-buynow">Buynow</div>
             </div>
             <div className="carousel-controls">
                 <div className="next" onClick={HandleindexDec}  ><i className="fa fa-caret-right leftone" style={{transform:"rotate(180deg)",position:"relative",right:"2px"}}></i></div>
@@ -70,7 +73,7 @@ export default function CustomCarousel(props) {
             <div className="carousel-text">
                 <Text license={licenses[index]} title={titles[index]} properties={properties[index]} index={index} description={discreptions[index]}/>
             </div>
-            <div className="carousel-footer"><div className="carousel-social"><div className="facebook"><i className="fa fa-facebook"></i></div> <div className="instagram"><i className="fa fa-instagram"></i></div></div> <div className="carousel-sell"> PAYMENT BY COD, INTERNET BANKING OR CARD</div><div className="carousel-number">0{index}</div></div>
+            <div className="carousel-footer"><div className="carousel-social"><div className="facebook"><i className="fa fa-facebook"></i></div> <div className="instagram"><i className="fa fa-instagram"></i></div><div className="youtube"><i className="fa fa-youtube"></i></div></div> <div className="carousel-sell"> PAYMENT BY COD, INTERNET BANKING OR CARD</div><div className="carousel-number">0{index+1}</div></div>
 
         </div>
     )
