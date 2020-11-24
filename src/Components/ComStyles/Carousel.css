@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+.custom-carousel{
+    position: relative;
+    min-height:400px;
+    max-height:600px;
+    display:flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+}
+.carousel-img{
+    position: relative;
+}
+.carousel-img img{
+    width:700px;
+    height:300px;
+    position: relative;
+    margin:0 auto
+
+}
+.carousel-controls{
+    display:flex;
+    position: relative;
+    margin:0 auto;
+    min-width:400px;
+    justify-content: space-between;
+
+}
+.carousel-controls div{
+    width:30px;
+    height:30px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    border:1px solid;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition:all 0.5s;
+}
+.carousel-controls div:hover{
+    background-color: #EEFF00;
+}
+.carousel-controls div >i{
+    text-align: center;
+}
+.carousel-text{
+    width:300px;
+    display:flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+    position: relative;
+    margin:0 auto;
+    font-family:Oswald ,sans-serif;
+    top:-50px;
+    min-height:200px;
+    
+}
+.carousel-license{
+    font-size:6pt;
+    font-size:100;
+    text-transform: uppercase;
+}
+
+.carousel-title{
+    font-size:18pt;
+    font-weight:600;
+}
+.carousel-description{
+    font-size:8pt;
+    letter-spacing:1px;
+}
+.carousel-text .properties{
+    display:flex;
+    font-size:6pt;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    top:10px;
+}
+.carousel-text .properties > div:not(:last-child){
+    margin-right:23px;
+    border-right:0.5px solid;
+    padding-right:23px;
+}
+.carousel-number{
+    font-size:60pt;
+    bottom:20px;
+    width:25%;
+
+}
+.carousel-footer{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:150%;
+    position: absolute;
+    bottom:50px;
+}
+.carousel-social{
+    width:250px;
+}
+.carousel-social div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    border:0.5px solid;
+    text-align: center;
+    padding-right:2px;
+}

@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap');
+.navbar{
+    display:flex;
+    position: relative;
+    width:100%;
+    justify-content: space-between;
+    align-items: center;
+    height:100px;
+}
+.navbar-right{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:250px;
+    
+}
+.navbar-middle{
+    position: relative;
+    top:40px;
+}
+.navbar-left{
+    width:250px;
+    
+    justify-content: flex-start !important;
+    display:flex;
+}
+
+button{
+    outline:none;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    font-size:8pt;
+    font-weight:400;
+}
+
+.active{
+    background-color: black;
+    color:white;
+    width:80px;
+    height:25px;
+    border:1px solid black;
+    border-radius:0;
+    align-items: center;
+}
+.active:focus{
+    border-radius: unset;
+    outline:none;
+}
+.disable{
+    background-color:transparent;
+    border:1px solid;
+    outline:none;
+    height:25px;
+    width:80px;
+
+}
+.disable:focus{
+    outline:none;
+}
+#search{
+    width: 583px;
+    height:42px;
+    border-radius:20px ;
+    border-width:2px;
+    border-color:#292F33;
+    padding:10px;
+    outline:none;
+}
+.brand{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top:-20px;
+}
+
+.shop{
+    letter-spacing:10px;
+    text-align: center;
+    position: relative;
+    margin:0 auto;
+}
+.nav-item{
+    text-align: center;
+    color:#292F33;
+}
+a{
+    text-decoration: none;
+    color:#292F33;
+    font-family: 'Oswald', sans-serif;
+    font-weight:400;
+    font-size:10pt;
+}
+a:hover{
+    text-decoration:none;
+    color:#292F33;
+}
+.badass{
+    font-family: 'Oswald', sans-serif;
+    font-size:30px;
+    top:20px;
+    font-weight:700;
+    letter-spacing:5px;
+    text-align: center;
+    
+
+}
+
+.fa-search{
+    position: relative;
+    right:30px;
+    top:13px;
+;
+}
+.badass-search{
+    position: relative;
+    display:flex;
+    top:10px;
+}
