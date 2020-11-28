@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap');
+
+.Special-offer{
+    display:grid;
+    grid-template-rows:1fr 11fr;
+    position: relative;
+    width:90%;
+    margin: 0 auto;
+    height:400px;
+    row-gap:10px;
+    margin-top:150px;
+  font-family: 'Oswald', sans-serif;
+}
+.special-header{
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+}
+.special-header-title{
+    font-size:16pt;
+}
+.special-header-right{
+    display:flex;
+    justify-content: space-between;
+    width:300px;
+    text-transform: uppercase;
+    min-width:300px;
+}
+.special-body{
+    position: relative;
+    display:grid;
+    grid-template-columns:repeat(4,3fr);
+    column-gap:20px;
+    width:100%;
+}
+.S-offer{
+    border:1px solid;
+    padding:1em;
+}
+.special-footer{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+    margin-top:20px;
+    font-size:10pt;
+    word-spacing:1px;
+}
+.special-footer-text{
+    position: absolute;
+ 
+    align-self:center;
+    z-index:2;
+    
+}
+.special-footer-background{
+    position: absolute;
+    height:10px;
+    width:100px;
+    transition:all 1s;
+    align-self:center;
+    z-index:1;
+    opacity:0.2
+
+}
+.special-footer-background:hover{
+    background-color:#EEFF00;
+}
+
+.S-offer-img{
+    width:100%;
+    position: relative;
+}
+.S-offer-img img{
+   
+    width:100%;
+}
+.S-offer-img .S-props-discount{
+    position: absolute;
+    float:right;
+
+    top:10px;
+    right:10px;
+    width:40px;
+    height:40px;
+    background: #EEFF00;
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.S-offer-body{
+    display:grid;
+    grid-template-rows:3fr 3fr 6fr;
+    width:100%;
+    height:120px;
+}
+.S-offer-title{
+    text-align:center;
+    align-self: end;
+}
+.S-offer-description{
+    text-align: center;
+    font-size:9pt;
+    word-spacing:1px;
+}
+.S-offer-price{  
+    text-align: center;
+    align-self: end;
+    font-size:10pt;
+}
+.S-offer-list{ 
+    display:flex;
+    justify-content: space-between;
+    width:100px;
+    text-align: center;
+    position: relative;
+    margin:0 auto;
+    align-self: end;
+}
+.S-offer-list div{
+    transition: all 1s;
+    height:35px;
+    width:35px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:50%;
+}
+.S-offer-list div:hover{
+    background-color: #EEFF00;
+    cursor: pointer;
+}

@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap');
+
+.offers{
+    display:flex;
+    width:100%;
+    position: relative;
+    margin-top:100px;
+    align-items: center;
+    height: 600px;
+    flex-direction: column;
+    font-family: 'Oswald', sans-serif;
+}
+.offers-title{
+    font-weight:700;
+    letter-spacing: 1px;
+    word-spacing:2px;
+    font-size:13pt;
+    font-style: normal;
+  
+}
+.offers-footer a{
+    text-decoration:none;
+    font-size:5pt;
+    font-weight:600;
+}
+.offers-footer{
+    margin-top:25px;
+    word-spacing:1.25pt;
+    font-weight:bold;
+    letter-spacing:1pt;
+
+}
+.offers-list{
+    display:flex;
+    position: relative;
+    margin-top:50px;
+    width:70%;
+    min-width:600px;
+    justify-content: space-between;
+    height:300px;
+
+}
+.offers-list div:not(:last-child){
+    margin-right:10px;
+}
+.offer{
+    border:1px solid black;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align: center;
+    min-width:40px;
+    height:300px;
+    background-color:#E6EBEF;
+    z-index:1;
+}
+.offer-head{
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    justify-items: center;
+    flex-direction: column;
+    height:180px;
+   
+}
+.offer-head img{
+    width:100%;
+    height:100%;
+    position: relative;
+    left:5px;
+    border:0px solid white;
+
+    box-shadow: white;
+
+
+}
+.offer-body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    position: relative;
+    width:100%;
+
+}
+.offer-title{
+    font-size:1.3em;
+    width:100%;
+    position:relative;
+    margin:0 auto;
+    display:flex;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    justify-content: center;
+    height:60px;
+
+
+
+}
+.offer-price{
+    font-size:6pt;
+ 
+    text-transform: uppercase;
+    letter-spacing: 0.5pt;
+    z-index:2;
+    text-align: center;
+    position: relative;
+    margin:0 auto;
+    width: 100%;
+    height:60px;
+    padding-top:15px;
+
+}
+.offer-price-shadow{
+    box-shadow:0px 5px 0px 0px #EEFF00;
+    width:50px;
+    height:6px;
+    position: relative;
+    bottom:45px;
+
+    z-index:1;
+
+}

@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-
 .custom-carousel{
     position: relative;
     min-height:400px;
     max-height:600px;
+    width:100%;
+    position: relative;
+    margin:0 auto;
+  
     display:flex;
     justify-content: center;
     justify-items: center;
@@ -16,12 +19,13 @@
     display:flex;
     justify-content: center;
     align-items: center;
+  
 }
 .carousel-img img{
     width:700px;
     height:300px;
     position: relative;
-    margin:0 auto
+    margin:0 auto;
 
 }
 .carousel-controls{
@@ -68,7 +72,6 @@
     font-size:100;
     text-transform: uppercase;
 }
-
 .carousel-title{
     font-size:18pt;
     font-weight:600;
@@ -93,24 +96,26 @@
 .carousel-number{
     font-size:60pt;
     bottom:20px;
-    width:250px;
+    width:200px;
+    font-weight: bold;
     display:flex;
     justify-content: flex-end;
 }
 .carousel-footer{
+    width:100%;
     display:flex;
     justify-content: space-between;
     align-items: center;
-    width:185%;
-    left:-42%;
- 
+
     position: absolute;
     bottom:50px;
+    padding:0 10px;
 }
 .carousel-social{
-    width:250px;
-
+    width:200px;
     display:flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .carousel-social div{
     margin-right:10px;
@@ -135,6 +140,7 @@
     text-align: center;
     font-size:8pt;
     font-family:Oswald ,sans-serif;
+    width:200px;
 }
 .carousel-buynow{
     position: absolute;
@@ -148,9 +154,9 @@
     border-radius:50%;
     height:60px;
     width:60px;
-    cursor: pointer;
     transition:all ease-in 0.5s;
 }
 .carousel-buynow:hover{
-    border-color:#AFFF00
+    border-color:#AFFF00;
+    color:white;
 }

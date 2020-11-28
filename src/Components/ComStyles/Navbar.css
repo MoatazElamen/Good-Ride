@@ -9,23 +9,26 @@
     justify-content: space-between;
     align-items: center;
     height:100px;
+
 }
 .navbar-right{
     display:flex;
     align-items:center;
     justify-content:space-between;
-    width:250px;
-    
+    width:20%;
+    max-width:200px;
 }
 .navbar-middle{
     position: relative;
     top:40px;
+    width:60%;
+    max-width:200px;
 }
 .navbar-left{
-    width:250px;
-    
     justify-content: flex-start !important;
     display:flex;
+    width:20%;
+    max-width:200px;
 }
 
 button{
@@ -61,14 +64,18 @@ button{
     outline:none;
 }
 #search{
-    width: 583px;
+    width: 100%;
+    min-width: 400px;
     height:42px;
     border-radius:20px ;
     border-width:2px;
     border-color:#292F33;
+    position: relative;
+    margin:0 auto;
     padding:10px;
     outline:none;
     font-family: 'Oswald', sans-serif;
+    font-weight:200;
     color:black;
 }
 .brand{
@@ -79,11 +86,14 @@ button{
     top:-20px;
 }
 
-.shop{
+.navbar-shop{
     letter-spacing:10px;
     text-align: center;
     position: relative;
+    font-family:'Oswald', sans-serif;
+    font-weight:500;
     margin:0 auto;
+    
 }
 .nav-item{
     text-align: center;
@@ -107,11 +117,9 @@ a:hover{
     font-weight:700;
     letter-spacing:5px;
     text-align: center;
-    
 
 }
-
-.fa-search{
+.navbar-search-fontawesome{
     position: relative;
     right:30px;
     top:13px;

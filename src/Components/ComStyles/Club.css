@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap');
+.club{
+    display:grid;
+    gap:10px;
+    width:75%;
+    min-width:300px;
+    position: relative;
+    margin:0 auto;
+    grid-template-columns:repeat(2,1fr);
+    height:500px;
+    max-height:500px;
+    font-family: 'Oswald', sans-serif;
+
+}
+.club-left{
+    padding:1em;
+    border:1px solid;
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    padding:10px;
+}
+.club-right{
+    display:grid;
+    grid-template-columns:10fr 2fr;
+    border:1px solid;
+    padding:10px;
+}
+.club-item-header img{
+ width:15px;
+ position: relative;
+ height:20px;
+
+}
+.club-left .club-item-header{
+    position:relative;
+    float:right;
+    text-align: end;
+}
+.club-item-grid-left{
+    display:grid;
+    grid-template-rows:3fr 7fr 1fr;
+    grid-auto-rows: minmax(100px,auto);
+    grid-column: 2;
+    
+    text-align: end;
+    grid-auto-rows: minmax(150px,100px);
+}
+.club-left-text{
+    align-self:start;
+}
+.club-register{
+    justify-self:end;
+    align-self: end;
+}
+.club-item-header{
+    font-size:17pt;
+    font-weight:500;
+}
+.club-sutisfied{
+    display:grid;
+    grid-template-rows:10fr 1fr;
+    text-align: center;
+    grid-auto-rows:minmax(150px,auto);
+}
+.club-sutisfied-number{ 
+    grid-row:1;
+    position: relative;
+    top:50px;
+}
+.club-sutisfied-text{
+    
+    align-self: end;
+}
+.club-sutisfied-number .num{ 
+writing-mode: vertical-lr ;
+position: relative;
+top:50px;
+line-height: 90%;
+font-size:90pt;
+text-align: start !important;
+}
+.club-item-grid-right{
+    display:grid;
+    grid-template-rows:2fr 3fr 4fr 2fr;
+}
+.club-find-more{
+    align-self: end;
+}
+.club-right-text{
+    padding-right:5px;
+}
+.club-item-subheader{
+    text-transform: uppercase;
+    align-self: end;
+    font-size:17pt;
+    margin-bottom:20px;
+    width:160px;
+    word-spacing: 2px;
+}
+.club-left-imgs{
+    grid-row:1;
+    display:relative;
+    bottom:120px;
+    left:10px;
+    align-self: end;
+}
+.x-img{
+    position: absolute;
+    width:200px;
+    left:0px;
+    bottom:0px;
+}
+.car-img{
+    position: absolute;
+    bottom:15px;
+    z-index:1
+    
+}

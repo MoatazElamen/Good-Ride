@@ -2,7 +2,7 @@ import React ,{useState,useEffect}from 'react'
 import "./ComStyles/Carousel.css"
 const Img = (props)=>{
     return(
-        <a href="/"><img  src={props.car} id={props.index} alt="img"/></a>
+        <img  src={props.car} id={props.index} alt="img"/>
     )
 }
 
@@ -30,7 +30,6 @@ const Text = (props)=>{
 }
 export default function CustomCarousel(props) {
     const [imgsarr,setImgsarr] = useState([])
-
     const [licenses,setLicenses] = useState([])
     const [titles,setTitles] = useState([])
     const [properties,setProperties] = useState([])
@@ -64,7 +63,7 @@ export default function CustomCarousel(props) {
         <div className="custom-carousel">
             <div className="carousel-img">
             <Img car={imgsarr[index]} />
-            <div className="carousel-buynow">Buynow</div>
+            <a href="/" className="carousel-buynow"> <div >Buynow </div></a>
             </div>
             <div className="carousel-controls">
                 <div className="next" onClick={HandleindexDec}  ><i className="fa fa-caret-right leftone" style={{transform:"rotate(180deg)",position:"relative",right:"2px"}}></i></div>
