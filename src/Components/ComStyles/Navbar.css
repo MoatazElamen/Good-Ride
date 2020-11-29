@@ -85,7 +85,9 @@ button{
     position: relative;
     top:-20px;
 }
-
+.navbar-right-frist-row{
+    
+}
 .navbar-shop{
     letter-spacing:10px;
     text-align: center;

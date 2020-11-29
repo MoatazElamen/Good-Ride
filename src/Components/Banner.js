@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react'
-
+import cityscape from "../assets/cityscape_02@2x.png"
 import Car from "../assets/img_car.png"
 import CustomCarousel from './CustomCarousel'
 import x from "../assets/x.png"

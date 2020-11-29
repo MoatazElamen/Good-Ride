@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap');
-
+/*
+------------
+Global Styles
+------------
+*/
 .chairs{   
     position: relative;
     display:flex;
@@ -7,15 +11,16 @@
     justify-items: center;
     justify-content: center;
     font-family: 'Oswald', sans-serif;
-    width:97%;
+    width:100%;
     height:500px;
     margin:0 auto;
-    margin-top:80px;
+    margin-top:250px;
 }
 .chairs-container{
     display:grid;
     grid-template-rows:4fr 4fr 4fr;
     justify-items: center;
+    width:100%;
     height:100%;
     position: relative;
     z-index:2;
@@ -24,54 +29,49 @@
     position: absolute;
     display:flex;
     justify-content: space-between;
-    width:95%;
+    width: 90%;
     height:100%;
     z-index:1;
     margin:0 auto;
     align-self: center;
+   
 }   
-.chairs-headers{
-    position: relative;
-    top:30px;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align:center;
-}
-.chairs-headers div{
+.chairs-relative-container{
+    display:grid;
+    justify-content: space-between;
+    align-content: center;
+    width:90%;
+    background-color: red;
     position: absolute;
-    text-align: center;
-    align-self: center;
-    justify-self: center;
+    left:5%;
+    z-index: 2;
 }
-.chairs-showen-header{
-    font-size:25pt;
-    width:200px;
-    font-weight:400;
-    letter-spacing: 1px;
+.chairs-filling-container{
+    position: absolute;
+    display:grid;
+    grid-template-columns:4fr 300px 4fr;
+    width:min(90%,100%);
+    height:100px;
+    align-self:center;
+    align-items: center;
+    left:5%;
+    grid-gap:20px;
+
 }
+/*
+------------
+Typography
+------------
+*/
 .chairs-hidden-header{
     position: relative;
     font-size:8vw;
     letter-spacing:6vw;
     font-weight:500;
     opacity:0.1;
-
     text-align: center;
     display:flex;
     justify-content: center;
-}
-.chairs-hidden-header div{
-    text-align: center;
-    left:3vw;
-    position: relative;
-}
-.chairs-footer{
-    text-align:center;
- 
-    align-self:end;
-    position: relative;
-    bottom:20px;
 }
 .chairs-footer-title{
     font-size:8pt;
@@ -85,64 +85,131 @@
 }
 .chairs-footer-register{
     font-weight:500;
-  
     font-size:5pt;
 
 }
-.chairs-relative-container{
-    display:flex;
-    justify-content: space-between;
-    align-content: space-between;
-    width:100%;
-    position:relative;
-    top:40px;
-    margin:0 auto;
+.chairs-inplus-filling-text{
+    font-size:8pt;
 
 }
-.chairs-filling-container{
+.chairs-showen-header{
+    font-size:25pt;
+    width:200px;
+    font-weight:400;
+    letter-spacing: 1px;
+}
+/*
+------------
+Layout
+------------
+*/
+.chairs-headers div{
     position: absolute;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+}
+
+.chairs-headers{
+    position: relative;
+    bottom:50px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align:center;
+}
+
+.chairs-hidden-header div{
+    text-align: center;
+    left:3vw;
+    position: relative;
+}
+.chairs-footer{
+    text-align:center;
+    align-self:end;
+    position: relative;
+    bottom:20px;
+}
+
+.chairs-filling-inplus{
+    position:relative;
     display:grid;
-    grid-template-columns:repeat(3,4fr);
+    grid-template-columns:1fr 2fr 2fr;
+    align-items: center;
+    grid-auto-columns: minmax(120px,auto);
+    bottom:20px;
+
+
+}
+.chairs-filling-middle{
+    display:flex;
+    justify-content: center;
+}
+.chairs-filling-inminus{
+    display:grid;
+    grid-template-columns:2fr 2fr 2fr;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     width:100%;
-    height:100px;
-    align-self:center;
-    justify-self: end;
-    background-color: violet;
-    margin:0 auto;
-    grid-gap:30px;
+
+
+
 }
-.chairs-filling-container div{
-    border:1px solid;
-}
+
+/*
+------------
+Components
+------------
+*/
 .chairs-plus{
     position: relative;
-    width:350px;
-    heighT:100%;
+
     display:flex;
-    justify-content: center;
-    align-content: center;
     align-items: center;
+    width:auto;
 }
 .chairs-plus img{
-    transform:rotate(45deg);
-    width:300px;
-    height:300px;
-}
-.chairs-minus{
-    position: relative;
-    width:450px;
-    heighT:100%;
-    display:flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+    width:30vw;
 }
 .chairs-minus img{
-    width:400px;
-    height:450px;
+    position: relative;
+    width:30vw;
+
 }
-.chairs-filling-inplus{
-    display:grid;
-    grid-template-columns:repeat(4,4fr);
+.chairs-minus{
+    position: relative;  
+      display:flex;
+
+    width:auto;
+}
+.chairs-inplus-filling-line{
+    display:flex;
+    flex-direction:column;
     justify-content: center;
+    align-content:center;
+}
+.chairs-inplus-filling-line div{
+    text-align: center;
+    position: relative;
+    bottom:10px;
+}
+.chairs-inplus-filling-img img{
+    width:80px;
+    position: relative;
+}
+.chairs-inplus-filling-img{
+    display:flex;
+    justify-items: center;
+    justify-content:flex-end;
+}
+.chairs-inminus-filling-clock{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size:9pt;
+}
+.chairs-inminus-filling-img img{
+    width:80px;
 }
