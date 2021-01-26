@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/Good-Ride/static/css/main.2625f2a7.chunk.css",
+    "main.js": "/Good-Ride/static/js/main.ec8a3520.chunk.js",
+    "main.js.map": "/Good-Ride/static/js/main.ec8a3520.chunk.js.map",
+    "runtime-main.js": "/Good-Ride/static/js/runtime-main.71bf7948.js",
+    "runtime-main.js.map": "/Good-Ride/static/js/runtime-main.71bf7948.js.map",
+    "static/css/2.0bb89375.chunk.css": "/Good-Ride/static/css/2.0bb89375.chunk.css",
+    "static/js/2.11dc0cdd.chunk.js": "/Good-Ride/static/js/2.11dc0cdd.chunk.js",
+    "static/js/2.11dc0cdd.chunk.js.map": "/Good-Ride/static/js/2.11dc0cdd.chunk.js.map",
+    "static/js/3.f0f03db9.chunk.js": "/Good-Ride/static/js/3.f0f03db9.chunk.js",
+    "static/js/3.f0f03db9.chunk.js.map": "/Good-Ride/static/js/3.f0f03db9.chunk.js.map",
+    "index.html": "/Good-Ride/index.html",
+    "static/css/2.0bb89375.chunk.css.map": "/Good-Ride/static/css/2.0bb89375.chunk.css.map",
+    "static/css/main.2625f2a7.chunk.css.map": "/Good-Ride/static/css/main.2625f2a7.chunk.css.map",
+    "static/js/2.11dc0cdd.chunk.js.LICENSE.txt": "/Good-Ride/static/js/2.11dc0cdd.chunk.js.LICENSE.txt",
+    "static/media/+.518adae0.png": "/Good-Ride/static/media/+.518adae0.png",
+    "static/media/-@2x.571b5884.png": "/Good-Ride/static/media/-@2x.571b5884.png",
+    "static/media/Image -1.11bae0e7.png": "/Good-Ride/static/media/Image -1.11bae0e7.png",
+    "static/media/cityscape.dc2b1674.png": "/Good-Ride/static/media/cityscape.dc2b1674.png",
+    "static/media/cityscape_02@2x.11eb6d79.png": "/Good-Ride/static/media/cityscape_02@2x.11eb6d79.png",
+    "static/media/font-awesome.min.css": "/Good-Ride/static/media/fontawesome-webfont.f691f37e.woff",
+    "static/media/i10.eb867412.png": "/Good-Ride/static/media/i10.eb867412.png",
+    "static/media/i11.2d6f7462.png": "/Good-Ride/static/media/i11.2d6f7462.png",
+    "static/media/img-1.fcf2413c.png": "/Good-Ride/static/media/img-1.fcf2413c.png",
+    "static/media/img-7.3fb5b0d9.png": "/Good-Ride/static/media/img-7.3fb5b0d9.png",
+    "static/media/img-8.5ece5bab.png": "/Good-Ride/static/media/img-8.5ece5bab.png",
+    "static/media/img-9.3d75508c.png": "/Good-Ride/static/media/img-9.3d75508c.png",
+    "static/media/img@2x.052cb1fb.png": "/Good-Ride/static/media/img@2x.052cb1fb.png",
+    "static/media/img_car.3c42e41e.png": "/Good-Ride/static/media/img_car.3c42e41e.png",
+    "static/media/shutterstock_-1.1b6dbba2.png": "/Good-Ride/static/media/shutterstock_-1.1b6dbba2.png",
+    "static/media/x.b94df2a6.png": "/Good-Ride/static/media/x.b94df2a6.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.71bf7948.js",
+    "static/css/2.0bb89375.chunk.css",
+    "static/js/2.11dc0cdd.chunk.js",
+    "static/css/main.2625f2a7.chunk.css",
+    "static/js/main.ec8a3520.chunk.js"
+  ]
+}
